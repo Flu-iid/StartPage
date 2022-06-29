@@ -1,0 +1,90 @@
+$colorBlack: black;
+$colorMaroon: #3D0000;
+$colorBlood: #950101;
+$colorRed: #FF0000;
+$colorWhite: rgb(244, 244, 244);
+
+* {
+    box-sizing: border-box;
+    font-size: 24px;
+    color: $colorWhite;
+    text-shadow:1px 1px 10px $colorRed;
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+    background-color: black;
+    padding-top: 100px;
+    box-shadow: inset 0px 0px 10px 3px#3D0000;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient($colorBlood, $colorMaroon, $colorMaroon);
+    background-color: $colorBlack;
+    box-shadow: 1px 0 15px 2px $colorRed;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 50px;
+    }
+}
+
+ul, li,
+ a {
+    padding: 5px 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 70px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.content {
+    width: 100%;
+    display: grid;
+    column-gap: 15%;
+    row-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid $colorBlood;
+    box-shadow:0 0 15px 2px #FF0000;
+    border-radius: 5px;
+    text-align: center;
+    &:focus {
+        color: $colorBlack;
+        outline: 2px solid $colorRed;
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding-top: 100px;
+}
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+}
