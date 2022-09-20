@@ -1,2 +1,2 @@
-# Flu-Browser-homepage
+# Start Page
 Simple daily homepage for your browser
